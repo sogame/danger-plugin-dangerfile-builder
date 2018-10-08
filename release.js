@@ -46,7 +46,7 @@ async function release() {
         tag: isPreRelease ? preReleaseTag : 'latest',
       },
       github: {
-        release: false, // CHANGE TO TRUE!!
+        release: true,
         preRelease: isPreRelease,
       },
     };
