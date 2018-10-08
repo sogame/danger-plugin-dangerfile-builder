@@ -1,0 +1,15 @@
+language: node_js
+
+addons:
+  sonarcloud:
+    organization: "sogame-github"
+
+install:
+  - npm ci --quiet
+  - npm run build
+
+script:
+  #- npm run danger
+  - npm run lint
+  - npm run test:coverage
+  - sonar-scanner # SonarCloud
