@@ -7,10 +7,11 @@ addons:
 install:
   - npm ci --quiet
   - npm run build
-  #- npm install -g danger-plugin-dangerfile-builder@0.1.0-beta.0
+  - npm install -g danger-plugin-dangerfile-builder@0.1.1-beta.0
+  - npm link danger-plugin-dangerfile-builder
 
 script:
-  #- npm run danger
+  - npm run danger
   - npm run lint
   - npm run test:coverage
   - sonar-scanner # SonarCloud
