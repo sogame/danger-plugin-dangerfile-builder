@@ -6,7 +6,7 @@ addons:
 
 install:
   - npm ci --quiet
-  - npm install -g danger-plugin-dangerfile-builder@0.1.1-beta.0
+  - npm install -g danger-plugin-dangerfile-builder@0.1.2-beta.1
   - npm link danger-plugin-dangerfile-builder # Link the global version of "danger-plugin-dangerfile-builder" into the local "node_modules/"
 
 script:
